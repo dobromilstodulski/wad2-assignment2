@@ -363,27 +363,6 @@ export const movies = [
     },
     {
         "adult": false,
-        "backdrop_path": "/54yOImQgj8i85u9hxxnaIQBRUuo.jpg",
-        "genre_ids": [
-            28,
-            80,
-            18,
-            53
-        ],
-        "id": 539885,
-        "original_language": "en",
-        "original_title": "Ava",
-        "overview": "A black ops assassin is forced to fight for her own survival after a job goes dangerously wrong.",
-        "popularity": 663.458,
-        "poster_path": "/qzA87Wf4jo1h8JMk9GilyIYvwsA.jpg",
-        "release_date": "2020-07-02",
-        "title": "Ava",
-        "video": false,
-        "vote_average": 5.6,
-        "vote_count": 757
-    },
-    {
-        "adult": false,
         "backdrop_path": "/aO5ILS7qnqtFIprbJ40zla0jhpu.jpg",
         "genre_ids": [
             28,
@@ -402,5 +381,351 @@ export const movies = [
         "video": false,
         "vote_average": 6.3,
         "vote_count": 184
-    }
+    },
+    {
+        "adult":false,
+        "backdrop_path":"/eShw0LB5CkoEfYtpUcXPD85oz5Q.jpg",
+        "genre_ids":[
+           27,
+           53,
+           35,
+           14
+        ],
+        "id":551804,
+        "original_language":"en",
+        "original_title":"Freaky",
+        "overview":"A mystical, ancient dagger causes a notorious serial killer to magically switch bodies with a 17-year-old girl.",
+        "popularity":368.679,
+        "poster_path":"/8xC6QSyxrpm0D5A6iyHNemEWBVe.jpg",
+        "release_date":"2020-11-12",
+        "title":"Freaky",
+        "video":false,
+        "vote_average":6.9,
+        "vote_count":214
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/g9rbiYxdGducLZ74Akv6YlKS6wh.jpg",
+        "genre_ids":[
+           28,
+           80,
+           18,
+           53
+        ],
+        "id":25602,
+        "original_language":"en",
+        "original_title":"Ninja",
+        "overview":"A westerner named Casey, studying Ninjutsu in Japan, is asked by the Sensei to return to New York to protect the legendary Yoroi Bitsu, an armored chest that contains the weapons of the last Koga Ninja.",
+        "popularity":360.015,
+        "poster_path":"/t24R7on3ngFfWjtvKIC9O69c3MM.jpg",
+        "release_date":"2009-10-22",
+        "title":"Ninja",
+        "video":false,
+        "vote_average":5.9,
+        "vote_count":186
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/juc9wt7Eh2IarLL5S1yQ1a21O1A.jpg",
+        "genre_ids":[
+           16,
+           10751,
+           35,
+           14
+        ],
+        "id":360920,
+        "original_language":"en",
+        "original_title":"The Grinch",
+        "overview":"The Grinch hatches a scheme to ruin Christmas when the residents of Whoville plan their annual holiday celebration.",
+        "popularity":359.949,
+        "poster_path":"/stAu0oF6dYDhV5ssbmFUYkQPtCP.jpg",
+        "release_date":"2018-11-08",
+        "title":"The Grinch",
+        "video":false,
+        "vote_average":6.8,
+        "vote_count":2372
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/DA7gzvlBoxMNL0XmGgTZOyv67P.jpg",
+        "genre_ids":[
+           16,
+           10751,
+           35,
+           14
+        ],
+        "id":741074,
+        "original_language":"en",
+        "original_title":"Once Upon a Snowman",
+        "overview":"The previously untold origins of Olaf, the innocent and insightful, summer-loving snowman are revealed as we follow Olaf’s first steps as he comes to life and searches for his identity in the snowy mountains outside Arendelle.",
+        "popularity":358.607,
+        "poster_path":"/hddzYJtfYYeMDOQVcH58n8m1W3A.jpg",
+        "release_date":"2020-10-23",
+        "title":"Once Upon a Snowman",
+        "video":false,
+        "vote_average":6.8,
+        "vote_count":227
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/y3XMIea7mwTzxt3NFFXi5YJKeFJ.jpg",
+        "genre_ids":[
+           10751,
+           28,
+           16,
+           12,
+           14
+        ],
+        "id":20982,
+        "original_language":"ja",
+        "original_title":"劇場版 NARUTO -ナルト- 疾風伝",
+        "overview":"Demons that once almost destroyed the world, are revived by someone. To prevent the world from being destroyed, the demon has to be sealed and the only one who can do it is the shrine maiden Shion from the country of demons, who has two powers; one is sealing demons and the other is predicting the deaths of humans. This time Naruto's mission is to guard Shion, but she predicts Naruto's death. The only way to escape it, is to get away from Shion, which would leave her unguarded, then the demon, whose only goal is to kill Shion will do so, thus meaning the end of the world. Naruto decides to challenge this \"prediction of death.\"",
+        "popularity":355.566,
+        "poster_path":"/vDkct38sSFSWJIATlfJw0l3QOIR.jpg",
+        "release_date":"2007-08-04",
+        "title":"Naruto Shippuden the Movie",
+        "video":false,
+        "vote_average":7.1,
+        "vote_count":242
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/aQUM5qfBBdWQQk3mwKp6OLwv8mS.jpg",
+        "genre_ids":[
+           16,
+           28,
+           18,
+           878
+        ],
+        "id":283566,
+        "original_language":"ja",
+        "original_title":"シン・エヴァンゲリオン劇場版:||",
+        "overview":"The fourth and final film in the Rebuild of Evangelion series.",
+        "popularity":350.881,
+        "poster_path":"/q034rbTWteRNA8sMSc2YjegmiUx.jpg",
+        "release_date":"2021-01-23",
+        "title":"Evangelion: 3.0+1.0 Thrice Upon a Time",
+        "video":false,
+        "vote_average":0,
+        "vote_count":0
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/54yOImQgj8i85u9hxxnaIQBRUuo.jpg",
+        "genre_ids":[
+           28,
+           80,
+           18,
+           53
+        ],
+        "id":539885,
+        "original_language":"en",
+        "original_title":"Ava",
+        "overview":"A black ops assassin is forced to fight for her own survival after a job goes dangerously wrong.",
+        "popularity":350.404,
+        "poster_path":"/qzA87Wf4jo1h8JMk9GilyIYvwsA.jpg",
+        "release_date":"2020-07-02",
+        "title":"Ava",
+        "video":false,
+        "vote_average":5.7,
+        "vote_count":920
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/kU7ZiyeUwcpTkYj3UcxSqGdZmxY.jpg",
+        "genre_ids":[
+           16,
+           28
+        ],
+        "id":618353,
+        "original_language":"en",
+        "original_title":"Batman: Death in the Family",
+        "overview":"Tragedy strikes the Batman's life again when Robin Jason Todd tracks down his birth mother only to run afoul of the Joker. An adaptation of the 1988 comic book storyline of the same name.",
+        "popularity":348.498,
+        "poster_path":"/k8Q9ulyRE8fkvZMkAM9LPYMKctb.jpg",
+        "release_date":"2020-10-13",
+        "title":"Batman: Death in the Family",
+        "video":false,
+        "vote_average":7.3,
+        "vote_count":140
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/xxA5AJBxgi1EPq9GO6cZtryAn1q.jpg",
+        "genre_ids":[
+           80,
+           10749,
+           18,
+           28
+        ],
+        "id":597094,
+        "original_language":"ja",
+        "original_title":"初恋",
+        "overview":"A young boxer and a call girl get caught up in a drug-smuggling scheme over the course of one night in Tokyo.",
+        "popularity":340.16,
+        "poster_path":"/9BacU3JOXFyHc5ZqrX7kM9UjpCw.jpg",
+        "release_date":"2019-05-31",
+        "title":"First Love",
+        "video":false,
+        "vote_average":7,
+        "vote_count":81
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/mbvP37gpODCkaCcYkdwK0FFnFKv.jpg",
+        "genre_ids":[
+           28,
+           80,
+           18,
+           53
+        ],
+        "id":493065,
+        "original_language":"en",
+        "original_title":"Cut Throat City",
+        "overview":"Four boyhood friends return to New Orleans’ Lower Ninth Ward after Hurricane Katrina, to find their home decimated and prospects for work swept away. Turning to a local gangster for employment, the crew is hired to pull off a daring casino heist, right in the heart of the city.",
+        "popularity":339.776,
+        "poster_path":"/a2Dcje3NkmySevZo5hVCfPaxqdL.jpg",
+        "release_date":"2020-07-31",
+        "title":"Cut Throat City",
+        "video":false,
+        "vote_average":6.3,
+        "vote_count":30
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/6cqogY7SYppI0ZNchaTKszSkxwH.jpg",
+        "genre_ids":[
+           10749,
+           53
+        ],
+        "id":652722,
+        "original_language":"es",
+        "original_title":"En brazos de un asesino",
+        "overview":"Victor (William Levy) is one of the world’s most handsome  men, but he has a deep secret – he is a cold blooded assassin. Smooth talking and seductive, Victor was raised to do one thing only, which is to kill for money. When he is sent to the home of a brutal drug lord to collect payment for his most recent hit, he encounters the beautiful Sarai (Alicia Sanz), who has been forced to spend the last 9 years of her life with the drug lord.",
+        "popularity":339.217,
+        "poster_path":"/iqRUOtbDunNq7gTux3zXz25Krwp.jpg",
+        "release_date":"2019-12-06",
+        "title":"In the Arms of an Assassin",
+        "video":false,
+        "vote_average":8.2,
+        "vote_count":208
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/wCkGiBE4swpWwJ0C8zJLr0WNH04.jpg",
+        "genre_ids":[
+           12,
+           28,
+           53
+        ],
+        "id":52451,
+        "original_language":"en",
+        "original_title":"The Three Musketeers",
+        "overview":"The hot-headed young D'Artagnan along with three former legendary but now down on their luck Musketeers must unite and defeat a beautiful double agent and her villainous employer from seizing the French throne and engulfing Europe in war.",
+        "popularity":333.443,
+        "poster_path":"/w2LbQ8FvZiQpWvZyHljaOeiNknK.jpg",
+        "release_date":"2011-08-31",
+        "title":"The Three Musketeers",
+        "video":false,
+        "vote_average":5.8,
+        "vote_count":1967
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/tGxKtDoIPqWM4XYjHutqH2hn5ca.jpg",
+        "genre_ids":[
+           18,
+           10749
+        ],
+        "id":628333,
+        "original_language":"en",
+        "original_title":"Wild Mountain Thyme",
+        "overview":"Headstrong farmer Rosemary Muldoon has her heart set on winning her neighbour Anthony Reilly's love. The problem is, Anthony seems to have inherited a family curse, and remains oblivious to his beautiful admirer. Stung by his father's plans to sell the family farm to his American nephew, Anthony is jolted into pursuing his dreams.",
+        "popularity":324.615,
+        "poster_path":"/vMW81htT6Kki8x0G4UNb7l48iIr.jpg",
+        "release_date":"2020-12-11",
+        "title":"Wild Mountain Thyme",
+        "video":false,
+        "vote_average":7.3,
+        "vote_count":6
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/lHFsMi0uprGSD25sIR1OVeqFiFR.jpg",
+        "genre_ids":[
+           18,
+           99
+        ],
+        "id":317952,
+        "original_language":"en",
+        "original_title":"Cartel Land",
+        "overview":"In the Mexican state of Michoacán, Dr. Jose Mireles, a small-town physician known as \"El Doctor,\" shepherds a citizen uprising against the Knights Templar, the violent drug cartel that has wreaked havoc on the region for years. Meanwhile, in Arizona's Altar Valley—a narrow, 52-mile-long desert corridor known as Cocaine Alley—Tim \"Nailer\" Foley, an American veteran, heads a small paramilitary group called Arizona Border Recon, whose goal is to halt Mexico’s drug wars from seeping across our border.",
+        "popularity":322.322,
+        "poster_path":"/w9EJ6s2h2FiLu3RRAmzJOTxW47l.jpg",
+        "release_date":"2015-07-03",
+        "title":"Cartel Land",
+        "video":false,
+        "vote_average":7.3,
+        "vote_count":265
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/6iUNJZymJBMXXriQyFZfLAKnjO6.jpg",
+        "genre_ids":[
+           28,
+           12,
+           14
+        ],
+        "id":297762,
+        "original_language":"en",
+        "original_title":"Wonder Woman",
+        "overview":"An Amazon princess comes to the world of Man in the grips of the First World War to confront the forces of evil and bring an end to human conflict.",
+        "popularity":317.141,
+        "poster_path":"/gfJGlDaHuWimErCr5Ql0I8x9QSy.jpg",
+        "release_date":"2017-05-30",
+        "title":"Wonder Woman",
+        "video":false,
+        "vote_average":7.3,
+        "vote_count":15591
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/riNgWD9D2faY8K9sZfDJ6v5Wip3.jpg",
+        "genre_ids":[
+           28,
+           80,
+           53
+        ],
+        "id":72387,
+        "original_language":"en",
+        "original_title":"Safe",
+        "overview":"After a former elite agent rescues a 12-year-old Chinese girl who's been abducted, they find themselves in the middle of a standoff between Triads, the Russian Mafia and high-level corrupt New York City politicians and police.",
+        "popularity":305.602,
+        "poster_path":"/kOCpkoMUVae9UIf85gO71SyjLbW.jpg",
+        "release_date":"2012-04-16",
+        "title":"Safe",
+        "video":false,
+        "vote_average":6.4,
+        "vote_count":1635
+     },
+     {
+        "adult":false,
+        "backdrop_path":"/uAJCrwsi9OWNOa2TeONdbYVBiuN.jpg",
+        "genre_ids":[
+           16,
+           28,
+           878
+        ],
+        "id":114478,
+        "original_language":"en",
+        "original_title":"Starship Troopers: Invasion",
+        "overview":"A distant Federation outpost Fort Casey comes under attack by bugs. The team on the fast attack ship Alesia is assigned to help the Starship John A. Warden stationed in Fort Casey evacuate along with the survivors and bring military intelligence safely back to Earth. Carl Jenkins, now ministry of Paranormal Warfare, takes the starship on a clandestine mission before its rendezvous with the Alesia and goes missing in the nebula. Now, the battle-hardened troopers are charged with a rescue mission that may lead to a much more sinister consequence than they ever could have imagined....",
+        "popularity":304.412,
+        "poster_path":"/4zQ5CDrhqB7mObwv5oYkGyh37Pl.jpg",
+        "release_date":"2012-07-21",
+        "title":"Starship Troopers: Invasion",
+        "video":false,
+        "vote_average":5.6,
+        "vote_count":229
+     },
 ];
