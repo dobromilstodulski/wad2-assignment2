@@ -727,5 +727,5 @@ export const movies = [
         "video":false,
         "vote_average":5.6,
         "vote_count":229
-     },
+     }
 ];
