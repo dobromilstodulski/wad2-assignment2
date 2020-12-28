@@ -24,9 +24,9 @@ const App = () => {
   return (
     <BrowserRouter>
     <div className="jumbotron">
+      <AuthContextProvider>
           <UpdatedSiteHeader />      {/* New Header  */}
           <div className="container-fluid">
-          <AuthContextProvider>
           <MoviesContextProvider>
           <GenresContextProvider>  {/* NEW */}
             <Switch>
@@ -44,8 +44,8 @@ const App = () => {
           </Switch>
           </GenresContextProvider>
           </MoviesContextProvider>
-          </AuthContextProvider> {/* NEW */}
-      </div> 
+      </div>
+      </AuthContextProvider> {/* NEW */} 
     </div>
   </BrowserRouter>
   );

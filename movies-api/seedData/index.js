@@ -29,7 +29,7 @@ export async function loadUsers() {
     }
   }
 
-  // deletes all movies documents in collection and inserts test data
+// deletes all movies documents in collection and inserts test data
 export async function loadMovies() {
   console.log('load seed data');
   console.log(movies.length);
