@@ -1,5 +1,5 @@
 import React, { useState, useEffect, createContext, useReducer } from "react";
-import { getMovies, getUpcomingMovies, getTopRatedMovies, addFavourites } from "../api/movie-api";
+import { getMovies, getUpcomingMovies, getTopRatedMovies } from "../api/movie-api";
 
 export const MoviesContext = createContext(null);
 
@@ -47,7 +47,7 @@ const MoviesContextProvider = (props) => {
 
   const addToFavorites = (movieId) => {
     const index = state.movies.map((m) => m.id).indexOf(movieId);
-    addFavourites(index);
+    dispatch({ type: "add-favorite", payload: { movie: state.movies[index] } });
   };
 
   const addToWatchList = (movieId) => {

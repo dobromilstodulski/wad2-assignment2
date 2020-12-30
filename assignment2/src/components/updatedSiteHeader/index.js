@@ -26,6 +26,8 @@ const UpdatedSiteHeader = (props) => {
       <Nav.Link href="/movies/toprated">Top Rated</Nav.Link>
       <Nav.Link href="/movies/favorites">Favorites</Nav.Link>
       <Nav.Link href="/movies/watchlist">Watch List</Nav.Link>
+      <Nav.Link href="/movies/search">Search</Nav.Link>
+      <Nav.Link href="/movies/profile">Profile</Nav.Link>
     </Nav>
     <Form inline>
     <Navbar.Text> Welcome {context.userName} <Button variant="outline-light" id="search" onClick={() => context.signout()}>Sign Out</Button>  </Navbar.Text>
@@ -45,8 +47,7 @@ const UpdatedSiteHeader = (props) => {
     <Nav className="mr-auto">
       <Nav.Link href="/movies/upcoming">Upcoming</Nav.Link>
       <Nav.Link href="/movies/toprated">Top Rated</Nav.Link>
-      <Nav.Link href="/movies/favorites">Favorites</Nav.Link>
-      <Nav.Link href="/movies/watchlist">Watch List</Nav.Link>
+      <Nav.Link href="/movies/search">Search</Nav.Link>
     </Nav>
     <Form inline>
     <Navbar.Text> You are not logged in {" "} <Button variant="outline-light" id="search" onClick={() => history.push("/login")}>Login</Button> </Navbar.Text> 
