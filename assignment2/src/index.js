@@ -14,11 +14,10 @@ import UpdatedUpcomingMoviesListPage from './pages/updatedUpcomingMoviesPage';
 import TopRatedMoviesPage from './pages/topRatedMoviesPage';
 import Login from "./pages/loginPage";
 import Register from "./pages/registerPage";
+import Search from "./pages/searchPage";
 import UpdatedAddMovieReviewPage from './pages/updatedAddMovieReviewPage';
 import GenresContextProvider from "./contexts/genresContext";
 import MoviesContextProvider from "./contexts/moviesContext";
-
-
 
 const App = () => {
   return (
@@ -38,6 +37,7 @@ const App = () => {
               <Route exact path="/movies/toprated" component={TopRatedMoviesPage} />
               <Route path="/login" component={Login} />
               <Route path="/register" component={Register} />
+              <Route path="/search" component={Search} />
               <Route path="/movies/:id" component={UpdatedMoviePage} />
               <Route path="/" component={UpdatedHomePage} />
               <Redirect from="*" to="/" />

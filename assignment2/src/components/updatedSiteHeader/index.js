@@ -27,7 +27,7 @@ const UpdatedSiteHeader = (props) => {
       <Nav.Link href="/movies/favorites">Favorites</Nav.Link>
       <Nav.Link href="/movies/watchlist">Watch List</Nav.Link>
       <Nav.Link href="/movies/search">Search</Nav.Link>
-      <Nav.Link href="/movies/profile">Profile</Nav.Link>
+      <Nav.Link href="/profile">Profile</Nav.Link>
     </Nav>
     <Form inline>
     <Navbar.Text> Welcome {context.userName} <Button variant="outline-light" id="search" onClick={() => context.signout()}>Sign Out</Button>  </Navbar.Text>

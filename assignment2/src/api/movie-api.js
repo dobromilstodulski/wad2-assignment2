@@ -63,3 +63,13 @@ export const getMovies = () => {
     }
     ).then(res => res.json());
   };
+
+  export const search = (searchString) => {
+    return fetch('/api/search', {
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        method: 'post',
+        body: JSON.stringify({ searchString: searchString })
+    }).then(res => res.json())
+};
