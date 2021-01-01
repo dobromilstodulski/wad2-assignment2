@@ -12,6 +12,21 @@ router.get('/', async (req, res) => {
     let data = await response.json();
 
     return res.status(200).send(data);
+
+    //https://stackoverflow.com/questions/22700597/fs-writefile-has-no-errors-but-fails-to-write-file
+    //https://stackoverflow.com/questions/47263055/writefile-does-not-create-file
+
+    const fs = require('fs');
+    fs.writeFileSync('../seedData/search.js', JSON.stringify(data), function(err) {
+    if (err) {
+        console.log(err);
+    }
+    });
+
+    fs.readFile('../seedData/search.js', 'utf8', function(err, searchData) {
+	const obj = JSON.parse(searchData)
+	console.log("The data from the file is: " + obj)
+})
 });
 
 export default router;

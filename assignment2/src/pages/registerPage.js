@@ -29,10 +29,12 @@ const RegisterPage = props => {
       <input value={userName} placeholder="user name" onChange={e => {
         setUserName(e.target.value);
       }}></input><br />
-      <input value={password} type="password" placeholder="password" onChange={e => {
+      <input value={password} type="password" placeholder="password" validators={['required', 'minStringLength:5']}
+      errorMessages={['password required', 'password must have a minimum length is 5 characters']} onChange={e => {
         setPassword(e.target.value);
       }}></input><br />
-      <input value={passwordAgain} type="password" placeholder="password again" onChange={e => {
+      <input value={passwordAgain} type="password" placeholder="password again" validators={['required', 'minStringLength:5']}
+      errorMessages={['password required', 'password must have a minimum length is 5 characters']} onChange={e => {
         setPasswordAgain(e.target.value);
       }}></input><br />
       {/* Login web form  */}

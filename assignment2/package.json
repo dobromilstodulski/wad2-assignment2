@@ -19,6 +19,7 @@
     "react": "^16.11.0",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.11.0",
+    "react-form-validator-core": "^1.0.0",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^3.29.4",
     "react-router-dom": "^5.2.0",
@@ -52,5 +53,5 @@
     "eslint-plugin-react": "^7.21.5",
     "nodemon": "^2.0.6"
   },
-  "proxy":"http://localhost:8080"
+  "proxy": "http://localhost:8080"
 }
