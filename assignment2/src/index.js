@@ -18,6 +18,7 @@ import Search from "./pages/searchPage";
 import UpdatedAddMovieReviewPage from './pages/updatedAddMovieReviewPage';
 import GenresContextProvider from "./contexts/genresContext";
 import MoviesContextProvider from "./contexts/moviesContext";
+import SearchContextProvider from "./contexts/searchContext";
 
 const App = () => {
   return (
@@ -27,7 +28,8 @@ const App = () => {
           <UpdatedSiteHeader />      {/* New Header  */}
           <div className="container-fluid">
           <MoviesContextProvider>
-          <GenresContextProvider>  {/* NEW */}
+          <GenresContextProvider>
+          <SearchContextProvider>  {/* NEW */}
             <Switch>
               <Route exact path="/reviews/form" component={UpdatedAddMovieReviewPage} />
               <Route path="/reviews/:id" component={UpdatedMovieReviewPage} />
@@ -37,11 +39,12 @@ const App = () => {
               <Route exact path="/movies/toprated" component={TopRatedMoviesPage} />
               <Route path="/login" component={Login} />
               <Route path="/register" component={Register} />
-              <Route path="/search" component={Search} />
+              <Route path="/movies/search" component={Search} />
               <Route path="/movies/:id" component={UpdatedMoviePage} />
               <Route path="/" component={UpdatedHomePage} />
               <Redirect from="*" to="/" />
           </Switch>
+          </SearchContextProvider>
           </GenresContextProvider>
           </MoviesContextProvider>
       </div>
