@@ -1,4 +1,4 @@
-export const upcoming = [
+export const genres = [
         {
            "id":28,
            "name":"Action"

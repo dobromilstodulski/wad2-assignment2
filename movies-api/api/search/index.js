@@ -26,7 +26,7 @@ router.get('/', async (req, res) => {
     fs.readFile('../seedData/search.js', 'utf8', function(err, searchData) {
 	const obj = JSON.parse(searchData)
 	console.log("The data from the file is: " + obj)
-})
+    })
 });
 
 export default router;

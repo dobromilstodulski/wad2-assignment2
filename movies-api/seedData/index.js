@@ -76,7 +76,7 @@ export async function loadMovies() {
     console.log(genres.length);
     try {
       await genreModel.deleteMany();
-      await genreModel.collection.insertMany(toprated);
+      await genreModel.collection.insertMany(genres);
       console.info(`${genres.length} Genres were successfully stored.`);
     } catch (err) {
       console.error(`failed to Load movie Data: ${err}`);

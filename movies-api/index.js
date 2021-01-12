@@ -10,6 +10,7 @@ import moviesRouter from './api/movies';
 import upcomingMoviesRouter from './api/upcomingMovies';
 import topRatedMoviesRouter from './api/topRatedMovies';
 import searchRouter from './api/search';
+import movieDetailsRouter from './api/movieDetails';
 import bodyParser from 'body-parser';
 
 dotenv.config();
@@ -55,6 +56,7 @@ app.use('/api/toprated', passport.authenticate('jwt', {session: false}), topRate
 app.use('/api/users', usersRouter);
 app.use('/api/genres', genresRouter);
 app.use('/api/search', searchRouter);
+app.use('/api/moviedetails', movieDetailsRouter);
 app.use(errHandler);
 
 app.listen(port, () => {
