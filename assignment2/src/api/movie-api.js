@@ -82,6 +82,22 @@ export const getGenres= () => {
   .then(json => json.results);
 };
 
+export const getMovieDetails= () => {
+  return fetch(
+     '/api/moviedetails'
+  )
+  .then(res => res.json())
+  .then(json => json.results);
+};
+
+export const getMovieReviews= () => {
+  return fetch(
+     '/api/movies/:id/reviews'
+  )
+  .then(res => res.json())
+  .then(json => json.results);
+};
+
 //https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
 /*
