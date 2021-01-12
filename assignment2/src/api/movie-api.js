@@ -84,7 +84,7 @@ export const getGenres= () => {
 
 export const getMovieDetails= () => {
   return fetch(
-     '/api/moviedetails'
+     '/api/moviedetails/${id}'
   )
   .then(res => res.json())
   .then(json => json.results);

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import {getMovie} from '../api/tmdb-api'
+import {getMovieDetails} from '../api/movie-api'
 
  const useMovie = id => {
   const [movie, setMovie] = useState(null);
   useEffect(() => {
-    getMovie(id).then(movie => {
+    getMovieDetails(id).then(movie => {
       setMovie(movie);
     });
   }, [id]);
