@@ -83,16 +83,24 @@ export const getGenres= () => {
 };
 
 export const getMovieDetails= () => {
+
+  var pathArray = window.location.pathname.split('/');
+  var id = pathArray[2];
+
   return fetch(
-     '/api/moviedetails/${id}'
+     "/api/moviedetails/" + id 
   )
   .then(res => res.json())
   .then(json => json.results);
 };
 
 export const getMovieReviews= () => {
+
+  var pathArray = window.location.pathname.split('/');
+  var id = pathArray[2];
+
   return fetch(
-     '/api/movies/:id/reviews'
+     "/api/movies/" + id + "/reviews"
   )
   .then(res => res.json())
   .then(json => json.results);
