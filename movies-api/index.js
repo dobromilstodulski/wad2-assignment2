@@ -1,7 +1,7 @@
 import './db';
 import session from 'express-session';
 import passport from './authenticate';
-import {loadUsers, loadMovies, loadUpcoming, loadTopRated} from './seedData';
+import {loadUsers, loadMovies, loadUpcoming, loadTopRated, loadGenres} from './seedData';
 import usersRouter from './api/users';
 import genresRouter from './api/genres';
 import dotenv from 'dotenv';
@@ -23,6 +23,7 @@ if (process.env.SEED_DB) {
   loadMovies();
   loadUpcoming();
   loadTopRated();
+  loadGenres();
 }
 
 const errHandler = (err, req, res) => {

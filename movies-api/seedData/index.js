@@ -2,9 +2,11 @@ import userModel from '../api/users/userModel';
 import {movies} from './movies.js';
 import {upcoming} from './upcoming.js';
 import {toprated} from './toprated.js';
+import {genres} from './genres.js';
 import movieModel from '../api/movies/movieModel';
 import upcomingMovieModel from '../api/upcomingMovies/upcomingMovieModel';
 import topRatedMovieModel from '../api/topRatedMovies/topRatedMovieModel';
+import genreModel from '../api/genres/genreModel';
 
 const users = [
   {
@@ -63,6 +65,19 @@ export async function loadMovies() {
       await topRatedMovieModel.deleteMany();
       await topRatedMovieModel.collection.insertMany(toprated);
       console.info(`${toprated.length} Movies were successfully stored.`);
+    } catch (err) {
+      console.error(`failed to Load movie Data: ${err}`);
+    }
+  }
+
+  // deletes all movies documents in collection and inserts test data
+  export async function loadGenres() {
+    console.log('load seed data');
+    console.log(genres.length);
+    try {
+      await genreModel.deleteMany();
+      await genreModel.collection.insertMany(toprated);
+      console.info(`${genres.length} Genres were successfully stored.`);
     } catch (err) {
       console.error(`failed to Load movie Data: ${err}`);
     }
