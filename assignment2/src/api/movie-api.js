@@ -109,6 +109,15 @@ export const getMovieReviews= id => {
   .then(json => json.results);
 };
 
+export const getMovie = id => {
+  return fetch(
+     '/api/movies/${id}',{headers: {
+       'Authorization': window.localStorage.getItem('token')
+    }
+  }
+  ).then(res => res.json());
+};
+
 //https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
 /*
