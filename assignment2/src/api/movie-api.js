@@ -76,31 +76,34 @@ export const getMovies = () => {
 
 export const getGenres= () => {
   return fetch(
-     '/api/genres'
+     '/api/genres',{headers: {
+      'Authorization': window.localStorage.getItem('token')
+   }
+ }
   )
   .then(res => res.json())
   .then(json => json.results);
 };
 
-export const getMovieDetails= () => {
-
-  var pathArray = window.location.pathname.split('/');
-  var id = pathArray[2];
+export const getMovieDetails= id => {
 
   return fetch(
-     "/api/moviedetails/" + id 
+    `/api/moviedetails/${id}`,{headers: {
+      'Authorization': window.localStorage.getItem('token')
+   }
+ }
   )
   .then(res => res.json())
   .then(json => json.results);
 };
 
-export const getMovieReviews= () => {
-
-  var pathArray = window.location.pathname.split('/');
-  var id = pathArray[2];
+export const getMovieReviews= id => {
 
   return fetch(
-     "/api/movies/" + id + "/reviews"
+    `/api/movies/${id}/reviews`,{headers: {
+         'Authorization': window.localStorage.getItem('token')
+      }
+    }
   )
   .then(res => res.json())
   .then(json => json.results);
