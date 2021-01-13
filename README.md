@@ -244,9 +244,10 @@ export const getMovieReviews= id => {
 
 ## Extra features
 
-. . Briefly explain any non-standard features, functional or non-functional, developed for the app.  
+Tried to integrate fs write file and read file to save the json results onto a file on the local machine and then export the data onto the MongoDB. When entering a new query, the file would then be overwrited with the new file and the search results will be seen where the search page is on the website.
 
-NULL
++ https://stackoverflow.com/questions/22700597/fs-writefile-has-no-errors-but-fails-to-write-file
++ https://stackoverflow.com/questions/47263055/writefile-does-not-create-file
 
 ## Independent learning.
 
