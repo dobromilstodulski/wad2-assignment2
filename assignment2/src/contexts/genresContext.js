@@ -1,12 +1,12 @@
 import React, { useState, useEffect, createContext } from "react";
-import { getGenres } from "../api/movie-api";
+import { getGenreList } from "../api/movie-api";
 
 export const GenresContext = createContext(null)
 
 const GenresContextProvider = props => {
     const [genres, setGenres] = useState([{ id: "0", name: "All" }]);
     useEffect(() => {
-      getGenres().then(allGenres => {
+      getGenreList().then(allGenres => {
         setGenres(genres[0], ...allGenres);
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps

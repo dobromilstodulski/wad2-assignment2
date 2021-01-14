@@ -4,6 +4,7 @@ import passport from './authenticate';
 import {loadUsers, loadMovies, loadUpcoming, loadTopRated, loadGenres} from './seedData';
 import usersRouter from './api/users';
 import genresRouter from './api/genres';
+import genreListRouter from './api/genreList';
 import dotenv from 'dotenv';
 import express from 'express';
 import moviesRouter from './api/movies';
@@ -55,6 +56,7 @@ app.use('/api/upcoming', passport.authenticate('jwt', {session: false}), upcomin
 app.use('/api/toprated', passport.authenticate('jwt', {session: false}), topRatedMoviesRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/genres', genresRouter);
+app.use('/api/genrelist', genreListRouter);
 app.use('/api/search', searchRouter);
 app.use('/api/moviedetails', movieDetailsRouter);
 app.use(errHandler);

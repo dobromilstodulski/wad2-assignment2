@@ -84,6 +84,16 @@ export const getGenres= () => {
   .then(res => res.json());
 };
 
+export const getGenreList= () => {
+  return fetch(
+     '/api/genrelist',{headers: {
+      'Authorization': window.localStorage.getItem('token')
+   }
+ }
+  )
+  .then(res => res.json());
+};
+
 export const getMovieDetails= id => {
 
   return fetch(
