@@ -3,8 +3,6 @@
 Name: Dobromil Stodulski
 
 ## Features.
-
-...... A bullet-point list of the ADDITIONAL features you have implemented in the API **THAT WERE NOT IN THE LABS** ......,
  
  + Search - Insert a query and search for a specific money, all the results are then listed related to the movie specified.
  + Movie Details - Fetches the movie details from the TMDB API for a specific movie ID.
@@ -50,7 +48,6 @@ secret=My JWT Secret Phrase
 
 
 ## API Design
-Give an overview of your web API design, perhaps similar to the following: 
 
 |  |  GET | POST | PUT | DELETE
 | -- | -- | -- | -- | -- 
@@ -152,24 +149,7 @@ export const signup = (username, password) => {
 
 ~~~
 
-Here is a list that I tried to integrate but ran into trouble:
-
-Genres (Works in the developer console but iterable error):
-
-~~~Javascript
-export const getGenres= () => {
-  return fetch(
-     '/api/genres',{headers: {
-      'Authorization': window.localStorage.getItem('token')
-   }
- }
-  )
-  .then(res => res.json())
-  .then(json => json.results);
-};
-~~~
-
-Movie Details (Also works in the developer console but doesn't display the content):
+Movie Details:
 
 ~~~Javascript
 export const getMovieDetails= id => {
@@ -184,6 +164,37 @@ export const getMovieDetails= id => {
   .then(json => json.results);
 };
 
+~~~
+
+Movie Reviews (Since login is inconsistent and this is protected then reviews may not show up.)
+~~~JavaScript
+export const getMovieReviews= id => {
+
+  return fetch(
+    `/api/movies/${id}/reviews`,{headers: {
+         'Authorization': window.localStorage.getItem('token')
+      }
+    }
+  )
+  .then(res => res.json())
+};
+
+~~~
+
+Here is a list that I tried to integrate but ran into trouble:
+
+Genres (Works in the developer console but iterable error #Update: I have removed the genre filter control as the function didn't work.):
+
+~~~Javascript
+export const getGenres= () => {
+  return fetch(
+     '/api/genres',{headers: {
+      'Authorization': window.localStorage.getItem('token')
+   }
+ }
+  )
+  .then(res => res.json())
+};
 ~~~
 
 Favourites:
@@ -221,22 +232,6 @@ Search (didn't know how to pass the query from the react app input box back into
         method: 'post',
         body: JSON.stringify({ searchString: searchString })
     }).then(res => res.json())
-};
-
-~~~
-
-Movie Reviews (Since login is inconsistent and this is protected then reviews may not show up, in fact without the movie details page, this will not show up.)
-~~~JavaScript
-export const getMovieReviews= id => {
-
-  return fetch(
-    `/api/movies/${id}/reviews`,{headers: {
-         'Authorization': window.localStorage.getItem('token')
-      }
-    }
-  )
-  .then(res => res.json())
-  .then(json => json.results);
 };
 
 ~~~
