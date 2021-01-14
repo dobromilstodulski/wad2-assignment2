@@ -81,8 +81,7 @@ export const getGenres= () => {
    }
  }
   )
-  .then(res => res.json())
-  .then(json => json.results);
+  .then(res => res.json());
 };
 
 export const getMovieDetails= id => {
@@ -93,8 +92,7 @@ export const getMovieDetails= id => {
    }
  }
   )
-  .then(res => res.json())
-  .then(json => json.results);
+  .then(res => res.json());
 };
 
 export const getMovieReviews= id => {
@@ -105,8 +103,7 @@ export const getMovieReviews= id => {
       }
     }
   )
-  .then(res => res.json())
-  .then(json => json.results);
+  .then(res => res.json());
 };
 
 export const getMovie = id => {

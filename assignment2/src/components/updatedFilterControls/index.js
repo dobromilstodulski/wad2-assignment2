@@ -26,15 +26,7 @@ const UpdatedFilterControls = props => {
                 <Form.Control placeholder="Title Search" onChange={handleTextChange} />
         </Col>
         <Col>
-                <Form.Control as="select" placeholder="Genres"  onChange={handleGenreChange}>
-                {context.genres.map(genre => {
-                return (
-                <option key={genre.id} value={genre.id}>
-                  {genre.name}
-                </option>
-              );
-            })}
-                </Form.Control>
+                
             </Col>
         </Row>
     </Form>
